@@ -1,0 +1,8 @@
+@keyframes blur{
+    from{
+        filter: blur(50px);
+    }
+    to{
+        filter: blur(0px);
+    }
+}

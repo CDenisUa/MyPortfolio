@@ -1,0 +1,120 @@
+@media screen and (max-width: 1700px){
+    .container{
+        max-width: 1700px;
+    }
+    .services{
+        &__img{
+            margin-left: 0;
+        }
+    }
+}
+@media screen and (max-width: 1600px){
+    .container{
+        max-width: 1600px;
+    }
+    .services{
+        &__wall-right{
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 1300px){
+    .container{
+        max-width: 1300px;
+    }
+    .header{
+        &__circle{
+            display: none;
+        }
+    }
+    .services{
+        &__list{
+            display: none;
+        }
+        &__wall-left{
+            display: none;
+        }
+        &__block{
+            flex-direction: column;
+        }
+        &__description{
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .container{
+        max-width: 768px;
+        width: 100%;
+        height: auto;
+    }
+    .header{
+        &__to,b{
+            display: none;
+        }
+            
+        &__description{
+            max-width: 450px;
+            width: 100%;
+        }
+        &__burger{
+            right: 25px;
+            top: 175px;
+        }
+        &__title{
+            word-wrap: break-word;
+            text-align: center;
+        }
+        
+    }
+    .services{
+        &__img{
+            max-width: 650px;
+            width: 100%;
+            background-size: cover;
+        }
+    }
+        
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        max-width: 480px;
+        width: 100%;
+    }
+    .caption{
+        margin-top: 50px;
+    }
+    .header{
+        &__nickname{
+            left: -50px;
+            font-size: 35px;
+            &::after{
+                top:40px;
+                left: 10px;
+            }
+        }
+        &__burger{
+            top: 50px;
+        }
+    }
+    .services{
+        margin-top: 100px;
+        &__content{
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        &__img{
+            background-size: contain;
+        }
+    }
+}
+
+
+
+
