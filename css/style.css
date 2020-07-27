@@ -101,6 +101,7 @@ body {
   height: 1000px;
   position: absolute;
   top: -100px;
+  left: 20vw;
   border-radius: 100%;
   background: radial-gradient(circle, rgba(96, 96, 96, 0) 0%, rgba(110, 98, 76, 0) 28%, rgba(224, 167, 65, 0.03) 60%, rgba(110, 98, 76, 0) 73%, rgba(96, 96, 96, 0) 100%);
   z-index: 5;
@@ -145,17 +146,13 @@ body {
   z-index: 2;
 }
 
-.header__title span {
+.header__title {
   font-family: 'UnderText';
   font-size: 50px;
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(96, 96, 96, 0.05)), color-stop(20%, rgba(110, 98, 76, 0.3)), color-stop(49%, rgba(224, 167, 65, 0.823967)), color-stop(80%, rgba(110, 98, 76, 0.3)), to(rgba(96, 96, 96, 0.05)));
-  background: linear-gradient(90deg, rgba(96, 96, 96, 0.05) 0%, rgba(110, 98, 76, 0.3) 20%, rgba(224, 167, 65, 0.823967) 49%, rgba(110, 98, 76, 0.3) 80%, rgba(96, 96, 96, 0.05) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #0B2349;
-  display: table;
-  margin: 80px auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  color: transparent;
 }
 
 .header__btnScroll {
@@ -379,6 +376,9 @@ body {
   .header__circle {
     display: none;
   }
+  .header__title span {
+    background-color: #b69b67;
+  }
   .services__list {
     display: none;
   }
@@ -427,6 +427,9 @@ body {
     word-wrap: break-word;
     text-align: center;
   }
+  .header__title span {
+    background-color: #b69b67;
+  }
   .services__img {
     max-width: 650px;
     width: 100%;
@@ -442,27 +445,37 @@ body {
   .caption {
     margin-top: 50px;
   }
+  .caption::before {
+    top: -5px;
+  }
   .header__nickname {
     left: -50px;
-    font-size: 35px;
+    font-size: 8vw;
   }
   .header__nickname::after {
-    top: 40px;
+    font-size: 6vw;
+    top: 38px;
     left: 10px;
   }
   .header__burger {
     top: 50px;
   }
+  .header__title span {
+    font-size: 10vw;
+  }
   .services {
     margin-top: 100px;
   }
   .services__content {
-    width: 100%;
+    max-width: 100%;
+    width: 250px;
     text-align: center;
     margin: 0;
     padding: 0;
   }
   .services__img {
+    max-width: 100%;
+    width: 80%;
     background-size: contain;
   }
 }
