@@ -1,7 +1,3 @@
-$(function () {
-    document.addEventListener('mousemove', light);
-});
-
 let
     bgTitle = $('.header__titleSpan'),
     lamp = $('.header__lamp'),
@@ -13,7 +9,18 @@ let
     colorTwo = 20,
     colorThree = 50,
     colorFour = 80,
-    colorFive = 100;
+    colorFive = 100,
+    currentWidth = document.documentElement.clientWidth;
+
+
+
+$(function () {
+    if (currentWidth >= 1600) {
+        document.addEventListener('mousemove', light);
+    }
+
+});
+
 
 function light(e) {
     let coursoreX, coursoreY, lampWidth, lampHeight, circleX, lightX;
@@ -44,6 +51,6 @@ function light(e) {
     colorFour = 70 + lightX + lightY;
     colorFive = 90 + lightX + lightY;
 
-    bgTitle.css({ 'background-image': `linear-gradient(90deg, rgba(96,96,96,0) ${colorOne}%, rgba(110,98,76,0.30) ${colorTwo}%, rgba(224,167,65,0.8239670868347339) ${colorThree}%, rgba(110,98,76,0.30) ${colorFour}%, rgba(96,96,96,0) ${colorFive}%` })
+    bgTitle.css({ 'background-image': `linear-gradient(90deg, rgba(96,96,96,0) ${colorOne}%, rgba(110,98,76,0.30) ${colorTwo}%, rgba(224,167,65,0.8239670868347339) ${colorThree}%, rgba(110,98,76,0.30) ${colorFour}%, rgba(96,96,96,0) ${colorFive}%` });
 
 }

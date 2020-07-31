@@ -160,135 +160,122 @@ body{
     }
 }
 
-// services
-
-.services{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-top: 200px;
+//main
+main{
+    margin-top: 150px;
+    position: relative;
+}
+.main{
+    margin-top: 150px;
     
-    
-    &__description{
-        margin-top: 50px;
-        margin-left: 275px;
-    }
-    &__block{
-        margin-top: 80px;
+    &__container{
         width: 100%;
-        display: flex;
+        display: grid;
+        grid-template-columns: 400px  4fr 1fr;
     }
-    &__list{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: space-evenly;
-        height: 100%;
-    }
-    &__item{
-        padding: 5px;
-        font-size: 45px;
-        color: $active;
-        font-family: UnderText;
-        transition: color .5s;
-        padding: 1px 0;
-        &:hover{
-            color:$gold;
-            border-top: 1px solid $brd;
-            border-bottom: 1px solid $brd;
-            padding: 0 0;
-        }
+    &__menu{
+        display: grid;
+        grid-auto-rows: 1fr;
+        align-self: center;
     }
     &__content{
-        width: 450px;
-        color: $active;
-        padding: 0 20px;
+        display: grid;
+        grid-template-rows:200px 200px 1fr;
+        grid-template-areas:
+        "title title" 
+        "text text" 
+        "img img";
+        color: #ffffffdf;
+    }
+    &__titleBlock{
+        grid-area: title;
+        align-self: start;
+        justify-self: center;
+    }
+    &__title{
+        font-size: 60px;
+        font-family: 'UnderText';
+        font-weight: 600;
+        letter-spacing: 20px;
+        color: #ffffffdf;
+    }
+    &__text{
+        grid-area: text;
+        justify-self: center;
+        text-align: center;
+        align-self: start;
+    }
+    &__textBlock{
+        width: 600px;
+        max-height: 200px;
+        height: auto;
+        overflow: hidden;
+        
         font-family: UnderText;
         font-size: 25px;
     }
+    &__imgBlock{
+        grid-area: img;
+        justify-self: center;
+    }
     &__img{
-        width: 650px;
+        display: block;
+        width: 600px;
         height: 400px;
-        margin-left: 100px;
-
-        background: #030303 url('../img/services/laptop.png') center no-repeat;
+        background-image: url('../img/services/laptop.png');
+        background-color: #030303;
         background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
         background-blend-mode: lighten;
         animation: blur 1s;
-
-        z-index: 5;
-        }
-    &__wall{
-        display: flex;
-        justify-content: end;
-        width: 300px;
-        height: 700px;
-
-        position: absolute;
-        
-        background-image: url('../img/services/wall.jpg');
-        background-color: #030303;
-        background-size: cover;
-        background-blend-mode: lighten;
-        
-        z-index: 4;
     }
-    &__wall-left{
-        left: 0px;
-        background-position: 100%;
-        z-index: -1;
-    }
-    &__wall-right{
-        right: 0px;
-        background-position: 0%;
-        z-index: -1;
-    }
-  
+    
 }
-
-// portfolio
-
-.portfolio{
-    width: 100%;
-    height: 1000px;
-    &__dropbtn{
-        background-color: #030303;
-        border: 1px solid #303030;
-        color: $active;
-        padding: 16px;
-        font-size: 24px;
-        cursor: pointer;
+.menu{
+    display: grid;
+    &__item{
+        list-style: none;
+        padding: 25px;
+        text-align: right;
         font-family: UnderText;
-    }
-    &__dropdown{
-        position: relative;
-        display: inline-block;
-        &:hover .portfolio__dropcontent{
-            display: block;
-        }
-    }
-
-    &__dropcontent{
-        display: none;
-        position: absolute;
-        z-index: 1;
-        font-size: 24px;
-        border: 1px solid #303030;
+        font-size: 45px;
+        color: $gold;
+        text-decoration: none;
+        transition: .5s;
         cursor: pointer;
-        a{
-            display: flex;
-            color: $active;
-            justify-content: center;
-            text-decoration: none;
-            padding: 10px 20px;
-            &:hover{
-                color: $gold;
-            }
+        &:hover{
+            display: block;
+            transform: scale(1.1);
+            color: $gold_light;
         }
     }
-
 }
+.wall{
+    display: block;
+    width: 300px;
+    height: 700px;
+
+    background-image: url('../img/services/wall.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #030303;
+    background-blend-mode: lighten;
+
+    position: absolute;
+    top: 100px;
+    z-index: -2;
+    &__left{
+        background-position: 100%;
+        
+        left: 0;
+    }
+    &__right{
+        background-position: 0%;
+        right: 0;
+    }
+}
+
 
 
 @import 'media';

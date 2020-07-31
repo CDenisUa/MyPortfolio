@@ -17,15 +17,17 @@
             display: none;
         }
     }
+    .header{
+        &__circle{
+            display: none;
+        }
+    }
 }
 @media screen and (max-width: 1300px){
     .container{
         max-width: 1300px;
     }
     .header{
-        &__circle{
-            display: none;
-        }
         &__title{
             span{
                 background-color: $gold;
