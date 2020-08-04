@@ -39,3 +39,4 @@ $.getJSON('/info.json', function (data) {
         img.css({ 'background-image': `url(${data['graph']['url']})` });
     })
 })
+
