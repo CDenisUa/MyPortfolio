@@ -23,16 +23,16 @@
         "en": "UX is User Experience (literally: 'user experience'). That is, it is what experience/impression a user gets from working with your interface. And the UI is the User Interface - what the interface looks like and what physical characteristics it gains.",
         "url": "../img/services/interface.jpg"
     },
-    "design": {
-        "ru": "Графический дизайн включает в себя большую часть разработки. Перед разработкой сайта нужно грамотно использовать все то что описано выше.",
-        "ua": "Графічний дизайн включає в себе найбільшу частину розробки. Перед розробкою вебсторінки потрібно якісно використовувати все те що написано зверху.",
-        "en": "Graphic design includes most of the development. Before developing the site you need to competently use all that is described above.",
-        "url": "../img/services/graph.png"
-    },
     "photo": {
         "ru": "Хорошо подобранное или сделанное фото на 80% приведет к успеху. Важно только качественно подать их.",
         "ua": "Хороші підібранні або зроблені фотокартки - це на 80% успіх. Головне якісно подати.",
         "en": "A well-picked or 80% photo taken will lead to success. It is only important to submit them qualitatively.",
         "url": "../img/services/photo.jpg"
+    },
+    "design": {
+        "ru": "Графический дизайн включает в себя большую часть разработки. Перед разработкой сайта нужно грамотно использовать все то что описано выше.",
+        "ua": "Графічний дизайн включає в себе найбільшу частину розробки. Перед розробкою вебсторінки потрібно якісно використовувати все те що написано зверху.",
+        "en": "Graphic design includes most of the development. Before developing the site you need to competently use all that is described above.",
+        "url": "../img/services/graph.png"
     }
 }
