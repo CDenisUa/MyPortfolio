@@ -166,8 +166,6 @@ main{
     position: relative;
 }
 .main{
-
-    
     &__container{
         width: 100%;
         display: grid;
@@ -228,7 +226,6 @@ main{
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-blend-mode: lighten;
-        animation: blur 1s;
     }
     
 }

@@ -1,5 +1,5 @@
 {
-    "web developmen": {
+    "web": {
         "ru": "Сайт - это самое важное средство информации в наше время. С его помощью вы можете как информировать социум, так и продавать товары.Если вы желаете достичь своей цели, website правильное решение.",
         "ua": "Веб-сторiнка - найважливіший засіб у наш час. З його допомогою ви можете як інформувати суспільство, так і продавати товари. Якщо ви хочете досягти своєї мети, веб-сторiнка - це правильне рішення.",
         "en": "The website is the most important medium in our time. With its help, you can both inform society and sell goods. If you want to achieve your goal, the website is the right solution.",
@@ -17,13 +17,13 @@
         "en": "Brand name is an element of identification. This is what the consumer sees first. A good name creates the right mood. It should correspond to the marketing strategy of the company, sound and look good, be easy to pronounce, be memorable, be individual and meaningful, stand out among competitors.",
         "url": "../img/services/brend.jpg"
     },
-    "ui": {
+    "ux": {
         "ru": "UX — это User Experience (дословно: «опыт пользователя»). То есть это то, какой опыт/впечатление получает пользователь от работы с вашим интерфейсом. А UI — это User Interface («пользовательский интерфейс») — то, как выглядит интерфейс и то, какие физические характеристики приобретает.",
         "ua": "UX - це User Experience(дослівно:'досвід користувача'). Тобто це той досвід / враження яке отримує користувач від роботи з вашим інтерфейсом. А UI - це User Interface (дослівно:'інтерфейс користувача').Те як виглядає сторінка, і які властивості вона має.",
         "en": "UX is User Experience (literally: 'user experience'). That is, it is what experience/impression a user gets from working with your interface. And the UI is the User Interface - what the interface looks like and what physical characteristics it gains.",
         "url": "../img/services/interface.jpg"
     },
-    "graph": {
+    "design": {
         "ru": "Графический дизайн включает в себя большую часть разработки. Перед разработкой сайта нужно грамотно использовать все то что описано выше.",
         "ua": "Графічний дизайн включає в себе найбільшу частину розробки. Перед розробкою вебсторінки потрібно якісно використовувати все те що написано зверху.",
         "en": "Graphic design includes most of the development. Before developing the site you need to competently use all that is described above.",

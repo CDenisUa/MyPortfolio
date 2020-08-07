@@ -1,42 +1,23 @@
-let webDesign = $('#webDesign'),
-    logo = $('#logo'),
-    content = $('.main__textBlock'),
-    img = $('.main__img'),
-    brand = $('#brand'),
-    ui = $('#ui'),
-    graph = $('#graph'),
-    photo = $('#photo');
+$(document).ready(function () {
+    $.getJSON('/info.json', function (data) {
+        if (window.innerWidth <= 1000) {
+            for (const key in data) {
+                $(`p[data="${key}"`).text(data[`${key}`]['ru']);
+                $(`div[data="${key}"`).css({ 'background-image': `url(${data[key]['url']})` });
+            }
+        }
 
-$.getJSON('/info.json', function (data) {
-    webDesign.click(() => {
-        content.text(data['web developmen']['ru']);
-        img.css({ 'background-image': `url(${data['web developmen']['url']})` });
-
-
-    })
-    logo.click(() => {
-        content.text(data['logo']['ru']);
-        img.css({ 'background-image': `url(${data['logo']['url']})` });
-    })
-
-    brand.click(() => {
-        content.text(data['brand']['ru']);
-        img.css({ 'background-image': `url(${data['brand']['url']})` });
-    })
-
-    ui.click(() => {
-        content.text(data['ui']['ru']);
-        img.css({ 'background-image': `url(${data['ui']['url']})` });
-    })
-
-    photo.click(() => {
-        content.text(data['photo']['ru']);
-        img.css({ 'background-image': `url(${data['photo']['url']})` });
-    })
-
-    graph.click(() => {
-        content.text(data['graph']['ru']);
-        img.css({ 'background-image': `url(${data['graph']['url']})` });
+        $('li[button]').click(function () {
+            let id = $(this).attr('id');
+            $('.main__textBlock').text(data[`${id}`]['ru']);
+            $('.main__img').css({ 'background-image': `url(${data[id]['url']})` });
+        });
     })
 })
+
+
+
+
+
+
 

@@ -58,6 +58,13 @@
             display: none;
         }
     }
+    .mobile{
+        &__container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5,500px);
+        }
+    }
 
 }
 
@@ -116,17 +123,10 @@
             font-size: 35px;
         }
     }
-    .mobile{
-        &__container{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(5,500px);
-        }
-        &__content{
-
-        }
-
+    
 }
+
+
 
 @media screen and (max-width: 480px){
     .container{
@@ -157,7 +157,7 @@
         }
     }
 }
-}
+
 @media screen and (max-width: 350px){
     .header{
         &__nickname{
