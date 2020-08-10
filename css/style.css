@@ -8,28 +8,6 @@
   src: url("../../fonts/Open_Sans_Condensed/OpenSansCondensed-Light.ttf");
 }
 
-@-webkit-keyframes blur {
-  from {
-    -webkit-filter: blur(50px);
-            filter: blur(50px);
-  }
-  to {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-  }
-}
-
-@keyframes blur {
-  from {
-    -webkit-filter: blur(50px);
-            filter: blur(50px);
-  }
-  to {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-  }
-}
-
 body {
   background-color: #030303;
 }
@@ -121,18 +99,46 @@ body {
   height: 50px;
   display: block;
   border: 1px #b69b67 solid;
+  cursor: pointer;
   position: absolute;
   right: 110px;
-  top: 140px;
+  top: 80px;
   z-index: 2;
 }
 
-.header__burger span {
+.header__burger-span, .header__burger-span:after, .header__burger-span:before {
   width: 40px;
+  height: 2px;
   display: block;
-  margin: 11px auto;
-  border: inherit;
+  position: absolute;
+  background-color: #b69b67;
+  top: 24px;
+  left: 4px;
   z-index: 1;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+
+.header__burger-span:after, .header__burger span:before {
+  content: '';
+}
+
+.header__burger-span:after {
+  top: 0;
+  left: 0px;
+  -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.header__burger-span:before {
+  top: 0px;
+  left: 0px;
+  -webkit-transform: translateY(12px);
+          transform: translateY(12px);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .header__lamp {
@@ -339,6 +345,24 @@ main {
   display: none;
 }
 
+.header__burger-spanActive {
+  height: 0;
+}
+
+.header__burger-spanActive::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.header__burger-spanActive:before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
 @media screen and (max-width: 1700px) {
   .container {
     max-width: 1700px;
@@ -406,6 +430,9 @@ main {
     width: 100%;
     height: auto;
   }
+  .caption {
+    margin-left: -100px;
+  }
   .header__to, .header b {
     display: none;
   }
@@ -415,7 +442,6 @@ main {
   }
   .header__burger {
     right: 25px;
-    top: 175px;
   }
   .header__title {
     word-wrap: break-word;
@@ -454,6 +480,7 @@ main {
   }
   .caption {
     margin-top: 50px;
+    margin-left: 0;
   }
   .caption::before {
     top: -5px;

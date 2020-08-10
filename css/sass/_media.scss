@@ -76,7 +76,9 @@
         width: 100%;
         height: auto;
     }
-    
+    .caption{
+        margin-left: -100px;
+    }
     .header{
         &__to,b{
             display: none;
@@ -88,7 +90,6 @@
         }
         &__burger{
             right: 25px;
-            top: 175px;
         }
         &__title{
             word-wrap: break-word;
@@ -137,6 +138,7 @@
     }
     .caption{
         margin-top: 50px;
+        margin-left: 0;
         &::before{
             top: -5px;
         }
