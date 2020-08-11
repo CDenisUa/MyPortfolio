@@ -11,11 +11,13 @@ let
     colorFour = 80,
     colorFive = 100,
     currentWidth = document.documentElement.clientWidth,
-    burgerBtn = $('.header__burger');
-
-
+    burgerBtn = $('.header__burger'),
+    burgerMenu = $('.burgerMenu');
 
 $(function () {
+
+    burgerMenu.fadeOut(0);
+
     if (currentWidth >= 1600) {
         document.addEventListener('mousemove', light);
     }
@@ -24,6 +26,7 @@ $(function () {
         $('.header__burger-span').toggleClass('header__burger-spanActive');
     });
 
+    menu();
 });
 
 
@@ -57,4 +60,14 @@ function light(e) {
     colorFive = 90 + lightX + lightY;
 
     bgTitle.css({ 'background-image': `linear-gradient(90deg, rgba(96,96,96,0) ${colorOne}%, rgba(110,98,76,0.30) ${colorTwo}%, rgba(224,167,65,0.8239670868347339) ${colorThree}%, rgba(110,98,76,0.30) ${colorFour}%, rgba(96,96,96,0) ${colorFive}%` });
+}
+
+function menu() {
+    burgerBtn.click(function () {
+        if (!$('.header__burger-span').hasClass('header__burger-spanActive')) {
+            burgerMenu.slideUp(500);
+        } else {
+            burgerMenu.slideDown(500);
+        }
+    })
 }

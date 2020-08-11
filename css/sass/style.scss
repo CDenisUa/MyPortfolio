@@ -54,6 +54,35 @@ body{
 }
 
 // header
+.burgerMenu {
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        background-color: rgba(3, 3, 3, 0.9);
+        top:150px;
+        z-index: 999;
+        right: 60px;
+        border-left: 1px solid $gold_light;
+    }
+
+    &__item {
+        color: $gold;
+        list-style: none;
+        font-size: 30px;
+        font-family: 'UnderText';
+        padding-top: 20px;
+        padding-bottom: 5px;
+        margin-bottom: 20px;
+        transition: all .5s;
+        cursor: pointer;
+        &:hover{
+            transform: scale(1.2);
+            color: $gold_light;        }
+    }
+}
+
 .header {
     display: flex;
     flex-direction: column;
