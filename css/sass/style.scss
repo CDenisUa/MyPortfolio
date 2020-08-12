@@ -9,7 +9,20 @@ $gold_light: #d9a440;
 $active: #b4b4b4;
 $brd: #303030;
 
-
+.up{
+    position: fixed;
+    right: 50px;
+    bottom: 20px;
+    color: $gold;
+    font-size: 50px;
+    cursor: pointer;
+    z-index: 999;
+    transition: .5s;
+    &:hover{
+        transform: scale(1.2);
+        color:$gold_light;
+    }
+}
 body{
     background-color: $main_bg_color;
 }
@@ -133,7 +146,7 @@ body{
             position: absolute;
             background-color: $gold;
             top: 24px;
-            left: 4px;
+            left: 5px;
             z-index: 1;
             transition: .1s;
         }

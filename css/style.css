@@ -8,6 +8,24 @@
   src: url("../../fonts/Open_Sans_Condensed/OpenSansCondensed-Light.ttf");
 }
 
+.up {
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+  color: #b69b67;
+  font-size: 50px;
+  cursor: pointer;
+  z-index: 999;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.up:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  color: #d9a440;
+}
+
 body {
   background-color: #030303;
 }
@@ -151,7 +169,7 @@ body {
   position: absolute;
   background-color: #b69b67;
   top: 24px;
-  left: 4px;
+  left: 5px;
   z-index: 1;
   -webkit-transition: .1s;
   transition: .1s;

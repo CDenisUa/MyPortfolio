@@ -1,3 +1,4 @@
+//объявление переменных
 let
     bgTitle = $('.header__titleSpan'),
     lamp = $('.header__lamp'),
@@ -12,24 +13,33 @@ let
     colorFive = 100,
     currentWidth = document.documentElement.clientWidth,
     burgerBtn = $('.header__burger'),
-    burgerMenu = $('.burgerMenu');
+    burgerMenu = $('.burgerMenu'),
+    mainTitle = $('.main__title'),
+    $counter = 0,
+    up = $('.up');
+//загружаем страницу и запускаем скрипты
 
 $(function () {
 
-    burgerMenu.fadeOut(0);
+    //скрываем меню
+    $('.up, .burgerMenu').fadeOut(0);
 
+    //работа лампочки выключается при разрешении дисплея меньше 1600
     if (currentWidth >= 1600) {
         document.addEventListener('mousemove', light);
     }
+
     //бургер анимация
     burgerBtn.click(function () {
         $('.header__burger-span').toggleClass('header__burger-spanActive');
     });
 
+    //выпадающее меню
     menu();
+    toUp();
 });
 
-
+//анимация лампочки
 function light(e) {
     let coursoreX, coursoreY, lampWidth, lampHeight, circleX, lightX;
 
@@ -62,6 +72,7 @@ function light(e) {
     bgTitle.css({ 'background-image': `linear-gradient(90deg, rgba(96,96,96,0) ${colorOne}%, rgba(110,98,76,0.30) ${colorTwo}%, rgba(224,167,65,0.8239670868347339) ${colorThree}%, rgba(110,98,76,0.30) ${colorFour}%, rgba(96,96,96,0) ${colorFive}%` });
 }
 
+//анимация выпадающего меню
 function menu() {
     burgerBtn.click(function () {
         if (!$('.header__burger-span').hasClass('header__burger-spanActive')) {
@@ -70,4 +81,20 @@ function menu() {
             burgerMenu.slideDown(500);
         }
     })
+}
+
+//появление кнопки и возврщение на первый экран
+function toUp() {
+    $(window).scroll(function () {
+        let scroll = $(window).scrollTop() + $(window).height();
+        let offset = mainTitle.offset().top;
+
+        if (scroll > offset) {
+            up.show(500);
+
+        } else {
+            up.hide(500);
+
+        }
+    });
 }
