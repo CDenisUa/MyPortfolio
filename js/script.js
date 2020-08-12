@@ -90,10 +90,10 @@ function toUp() {
         let offset = mainTitle.offset().top;
 
         if (scroll > offset) {
-            up.show(500);
+            up.fadeIn(500);
 
         } else {
-            up.hide(500);
+            up.hide(200);
 
         }
     });
