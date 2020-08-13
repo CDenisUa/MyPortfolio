@@ -93,6 +93,7 @@ body {
 }
 
 .burgerMenu__item {
+  display: block;
   color: #b69b67;
   list-style: none;
   font-size: 30px;
@@ -102,6 +103,7 @@ body {
   margin-bottom: 20px;
   -webkit-transition: all .5s;
   transition: all .5s;
+  text-decoration: none;
   cursor: pointer;
 }
 
@@ -521,9 +523,9 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .footer__data {
@@ -573,7 +575,7 @@ main {
 }
 
 .footer__icons {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .footer__icons i {
@@ -821,6 +823,9 @@ main {
   }
   .footer__mail {
     margin: 20px 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .footer__data {
     width: 100%;

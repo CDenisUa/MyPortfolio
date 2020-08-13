@@ -81,6 +81,7 @@ body{
     }
 
     &__item {
+        display: block;
         color: $gold;
         list-style: none;
         font-size: 30px;
@@ -89,6 +90,7 @@ body{
         padding-bottom: 5px;
         margin-bottom: 20px;
         transition: all .5s;
+        text-decoration: none;
         cursor: pointer;
         &:hover{
             transform: scale(1.2);
@@ -416,7 +418,7 @@ main{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: start;
     }
     &__data{
         display: flex;
@@ -456,7 +458,7 @@ main{
         }
     }
     &__icons{
-        margin-top: 10px;
+        margin-top: 20px;
         
         i{
             transition: .3s;
