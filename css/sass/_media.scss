@@ -170,8 +170,6 @@
     
 }
 
-
-
 @media screen and (max-width: 480px){
     .container{
         max-width: 480px;
@@ -182,6 +180,14 @@
         margin-left: 0;
         &::before{
             top: -5px;
+        }
+    }
+    .up{
+        right: 15px;
+    }
+    .burgerMenu{
+        &__block{
+            top: 120px;
         }
     }
     .header{
@@ -233,6 +239,9 @@
             width: 60%;
             margin: 20px auto;
             flex-wrap: wrap;
+            i{
+                font-size: 40px;
+            }
         }
     }
     
@@ -241,6 +250,11 @@
 @media screen and (max-width: 360px){
     .caption{
         margin: 25px;
+    }
+    .burgerMenu{
+        &__block{
+            top: 100px;
+        }
     }
     .header{
         &__nickname{
@@ -279,7 +293,6 @@
         &__icons{
             a{
                 font-size: 30px;
-
             }
         }
     }

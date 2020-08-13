@@ -786,6 +786,12 @@ main {
   .caption::before {
     top: -5px;
   }
+  .up {
+    right: 15px;
+  }
+  .burgerMenu__block {
+    top: 120px;
+  }
   .header__nickname {
     left: -50px;
     font-size: 9vw;
@@ -836,11 +842,17 @@ main {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  .footer__icons i {
+    font-size: 40px;
+  }
 }
 
 @media screen and (max-width: 360px) {
   .caption {
     margin: 25px;
+  }
+  .burgerMenu__block {
+    top: 100px;
   }
   .header__nickname {
     left: -50px;

@@ -83,7 +83,7 @@ function menu() {
     })
 }
 
-//появление кнопки и возврщение на первый экран
+//появление кнопки
 function showAndToUp() {
     $(window).scroll(function () {
         let scroll = $(window).scrollTop() + $(window).height();
@@ -97,15 +97,14 @@ function showAndToUp() {
 
         }
     });
-
-
 }
 
 //Плавные якоря
 $('a[href^="#"').click(function () {
     let target = $(this).attr('href');
+    console.log(target);
     $('html,body').animate({
         scrollTop: $(target).offset().top
-    }, 500);
+    }, 800);
     return false;
 })
