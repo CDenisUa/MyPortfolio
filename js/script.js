@@ -36,7 +36,7 @@ $(function () {
 
     //выпадающее меню
     menu();
-    toUp();
+    showAndToUp();
 });
 
 //анимация лампочки
@@ -84,7 +84,7 @@ function menu() {
 }
 
 //появление кнопки и возврщение на первый экран
-function toUp() {
+function showAndToUp() {
     $(window).scroll(function () {
         let scroll = $(window).scrollTop() + $(window).height();
         let offset = mainTitle.offset().top;
@@ -97,4 +97,6 @@ function toUp() {
 
         }
     });
+
+
 }

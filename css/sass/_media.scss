@@ -40,7 +40,20 @@
             display: none;
         }
     }
-
+    .about{
+        &__body{
+            img{
+            width: 400px;
+        }
+        }
+        
+        &__title{
+            padding-bottom: 20px;
+        }
+        &__discription{
+            padding-bottom: 50px;
+        }
+    }
         
 }
 @media screen and (max-width: 1000px){
@@ -126,6 +139,34 @@
             font-size: 35px;
         }
     }
+    .about{
+        &__body{
+            flex-direction:column;
+            margin-bottom: 50px;
+        }
+    }
+    .footer{
+        flex-direction: column;
+       
+        &__data{
+             margin: 0;
+        }
+        &__copyright{
+            order: 2;
+        }
+        &__icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+            margin: 50px 0;
+
+            i{
+                margin-left: 20px;
+                font-size: 30px;
+            }
+        }
+    }
     
 }
 
@@ -160,26 +201,88 @@
             font-size: 10vw;
         }
     }
+    .about{
+        margin-top: 50px;
+        margin-bottom: 0;
+        &__body{
+            margin-bottom: 0;
+        }
+        &__title{
+            margin: 20px auto;
+        }
+        img{
+            width: 80%;
+        }
+        &__discription{
+            width: 80%;
+            padding-bottom: 0;
+        }
+    }
+    .footer{
+        h2{
+            text-align: center;
+        }
+        &__mail{
+            margin: 20px 0;
+        }
+        &__data{
+            width: 100%;
+        }
+        &__icons{
+            width: 60%;
+            margin: 20px auto;
+            flex-wrap: wrap;
+        }
+    }
+    
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 360px){
+    .caption{
+        margin: 25px;
+    }
     .header{
         &__nickname{
             left: -50px;
             font-size: 8.5vw;
             &::after{
                 font-size: 6vw;
-                top:28px;
+                top:32px;
                 left: 10px;
             }
+        }
+        &__burger{
+            top:20px;
+        }
+        &__lamp{
+            margin-top: 30px;
         }
 }
     .main{
         &__img{
-            width: 100vw;
+            width: 80vw;
             height: 40vh;
         }
+    } 
+    .footer{
+        &__data{
+            h2{
+                font-size: 30px;
+                margin-top: 20px;
+                text-align: center;
+            }
+            a{
+                font-size: 20px;
+            }
+        }
+        &__icons{
+            a{
+                font-size: 30px;
+
+            }
+        }
     }
-}
+}       
+    
 
 

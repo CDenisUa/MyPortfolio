@@ -354,4 +354,139 @@ main{
     }
 }
 
+//About
+
+.about{
+    display: flex;
+    flex-direction: column;
+    color: #ffffffdf;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    &__title{
+        margin: 0 auto;
+        padding-bottom: 100px;
+    }
+    &__body{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    &__discription{
+        width: 500px;
+        font-size: 25px;
+        font-family: 'UnderText';
+        color: #ffffffdf;
+        ul{
+            color: $gold_light;
+            
+        }
+        span{
+                display: block;
+                padding: 40px 0 5px 0;
+                font-size: 30px;
+                letter-spacing: 2px;
+                font-weight: 600;
+                color: $gold_light;
+            }
+        a:last-child{
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            text-decoration: none;
+            button{
+                cursor: pointer;
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+        }
+            }
+}
+//footer
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #ffffffdf;
+    font-size: 25px;
+    font-family: 'underText';
+    border-top: 2px solid #ffffffdf;
+    &__mail{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__data{
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        a{
+            color:#ffffffdf;
+            font-size: 25px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        a[href^="mailto"]:hover a[href^="mailto"]:before{
+            color: red;
+        }
+        a[href^="tel"]:before{
+            content:'\f87b';
+            display: inline-block;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900; 
+            margin-right: 20px;
+        }
+        a[href^="mailto"]:before{
+            content:'\f199';
+            display: inline-block;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900; 
+             margin-right: 20px;
+        }
+
+        a[href^="skype"]{
+            i{
+                margin-right: 20px;
+            }
+        }
+    }
+    &__icons{
+        margin-top: 10px;
+        
+        i{
+            transition: .3s;
+            margin-left: 10px;
+        }
+        i:hover{
+            color:#ffffffdf;
+        }
+        .fa-facebook{
+            color:#4267b2;
+        }
+        .fa-linkedin{
+            color: #1eacf5;
+        }
+        .fa-discord{
+            color: #7289da;
+        }
+        .fa-telegram{
+            color: #0088CC;
+        }
+        .fa-twitter-square{
+            color: #1DA1F2;
+        }
+        .fa-whatsapp{
+            color: #01c10a;
+        }
+        .fa-viber{
+            color: #8661d2;
+        }
+    }
+
+}
 @import 'media';

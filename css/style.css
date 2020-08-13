@@ -419,6 +419,201 @@ main {
           transform-origin: center;
 }
 
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffffdf;
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.about__title {
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.about__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__discription {
+  width: 500px;
+  font-size: 25px;
+  font-family: 'UnderText';
+  color: #ffffffdf;
+}
+
+.about__discription ul {
+  color: #d9a440;
+}
+
+.about__discription span {
+  display: block;
+  padding: 40px 0 5px 0;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #d9a440;
+}
+
+.about__discription a:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.about__discription a:last-child button {
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffffdf;
+  font-size: 25px;
+  font-family: 'underText';
+  border-top: 2px solid #ffffffdf;
+}
+
+.footer__mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 100px;
+}
+
+.footer__data a {
+  color: #ffffffdf;
+  font-size: 25px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.footer__data h2 {
+  font-size: 30px;
+}
+
+.footer__data a[href^="mailto"]:hover a[href^="mailto"]:before {
+  color: red;
+}
+
+.footer__data a[href^="tel"]:before {
+  content: '\f87b';
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 20px;
+}
+
+.footer__data a[href^="mailto"]:before {
+  content: '\f199';
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 20px;
+}
+
+.footer__data a[href^="skype"] i {
+  margin-right: 20px;
+}
+
+.footer__icons {
+  margin-top: 10px;
+}
+
+.footer__icons i {
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-left: 10px;
+}
+
+.footer__icons i:hover {
+  color: #ffffffdf;
+}
+
+.footer__icons .fa-facebook {
+  color: #4267b2;
+}
+
+.footer__icons .fa-linkedin {
+  color: #1eacf5;
+}
+
+.footer__icons .fa-discord {
+  color: #7289da;
+}
+
+.footer__icons .fa-telegram {
+  color: #0088CC;
+}
+
+.footer__icons .fa-twitter-square {
+  color: #1DA1F2;
+}
+
+.footer__icons .fa-whatsapp {
+  color: #01c10a;
+}
+
+.footer__icons .fa-viber {
+  color: #8661d2;
+}
+
 @media screen and (max-width: 1700px) {
   .container {
     max-width: 1700px;
@@ -449,6 +644,15 @@ main {
   }
   .wall__right {
     display: none;
+  }
+  .about__body img {
+    width: 400px;
+  }
+  .about__title {
+    padding-bottom: 20px;
+  }
+  .about__discription {
+    padding-bottom: 50px;
   }
 }
 
@@ -527,6 +731,45 @@ main {
   .main__title {
     font-size: 35px;
   }
+  .about__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__data {
+    margin: 0;
+  }
+  .footer__copyright {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    margin: 50px 0;
+  }
+  .footer__icons i {
+    margin-left: 20px;
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -556,21 +799,73 @@ main {
   .header__title span {
     font-size: 10vw;
   }
+  .about {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .about__body {
+    margin-bottom: 0;
+  }
+  .about__title {
+    margin: 20px auto;
+  }
+  .about img {
+    width: 80%;
+  }
+  .about__discription {
+    width: 80%;
+    padding-bottom: 0;
+  }
+  .footer h2 {
+    text-align: center;
+  }
+  .footer__mail {
+    margin: 20px 0;
+  }
+  .footer__data {
+    width: 100%;
+  }
+  .footer__icons {
+    width: 60%;
+    margin: 20px auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 360px) {
+  .caption {
+    margin: 25px;
+  }
   .header__nickname {
     left: -50px;
     font-size: 8.5vw;
   }
   .header__nickname::after {
     font-size: 6vw;
-    top: 28px;
+    top: 32px;
     left: 10px;
   }
+  .header__burger {
+    top: 20px;
+  }
+  .header__lamp {
+    margin-top: 30px;
+  }
   .main__img {
-    width: 100vw;
+    width: 80vw;
     height: 40vh;
+  }
+  .footer__data h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .footer__data a {
+    font-size: 20px;
+  }
+  .footer__icons a {
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
