@@ -441,36 +441,35 @@ main{
     }
 }
 .html-block:before{
-    @include fa-icon;
-    @extend .fab;
-    content:fa-content($fa-var-html5);
-    // display: inline-block;
-    // font-family: "Font Awesome 5 Free";
-    // font-weight: 900; 
-    // margin-right: 10px;
+    @include iconAwesome($fa-var-html5);
+    color: #e44d26;
 }
 .CSS3:before{
-    @include fa-icon;
-    @extend .fab;
-    content:fa-content($fa-var-css3-alt);
+    @include iconAwesome($fa-var-css3-alt);
+    color:#254bde;
 }
 .JavaScript:before{
     @include iconAwesome($fa-var-js-square);
+    color: yellow;
 }
 .design:before{
     @include iconAwesome($fa-var-adobe);
+    color: red;
 }
 .python:before{
     @include iconAwesome($fa-var-python);
+    color: #ffd343;
 }
 .java:before{
     @include iconAwesome($fa-var-java);
     color: #fff;
+    
 }
 .cplus:before{
     content: 'C++';
     margin-right: 20px;
     font-family: serif;
+    color: #fff;
 }
 //footer
 footer{

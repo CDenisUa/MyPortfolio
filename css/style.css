@@ -6653,7 +6653,9 @@ main {
   font-variant: normal;
   font-weight: normal;
   line-height: 1;
+  margin-right: 20px;
   content: "\f13b";
+  color: #e44d26;
 }
 
 .CSS3:before {
@@ -6664,7 +6666,9 @@ main {
   font-variant: normal;
   font-weight: normal;
   line-height: 1;
+  margin-right: 20px;
   content: "\f38b";
+  color: #254bde;
 }
 
 .JavaScript:before {
@@ -6677,6 +6681,7 @@ main {
   line-height: 1;
   margin-right: 20px;
   content: "\f3b9";
+  color: yellow;
 }
 
 .design:before {
@@ -6689,6 +6694,7 @@ main {
   line-height: 1;
   margin-right: 20px;
   content: "\f778";
+  color: red;
 }
 
 .python:before {
@@ -6701,6 +6707,7 @@ main {
   line-height: 1;
   margin-right: 20px;
   content: "\f3e2";
+  color: #ffd343;
 }
 
 .java:before {
@@ -6720,6 +6727,7 @@ main {
   content: 'C++';
   margin-right: 20px;
   font-family: serif;
+  color: #fff;
 }
 
 footer {
