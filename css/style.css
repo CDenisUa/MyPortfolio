@@ -6143,6 +6143,7 @@ body {
 }
 
 .container {
+  width: 1700px;
   max-width: 1700px;
   margin: 0 auto;
 }
@@ -6620,7 +6621,6 @@ main {
 
 .skill {
   width: 100%;
-  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6633,16 +6633,42 @@ main {
   border-top: 2px solid #ffffffdf;
 }
 
+.skill__boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .skill__box {
+  width: 30%;
+  height: 500px;
   color: #ffffffdf;
   font-family: 'undertext';
   font-size: 25px;
+  margin-bottom: 30px;
+  display: inline-block;
+  background-color: #000000aa;
 }
 
 .skill__box span {
   font-weight: 600;
   font-size: 27px;
   color: #d9a440;
+  font-size: 40px;
+}
+
+.skill__box article {
+  float: left;
+}
+
+.icon:before {
+  font-size: 60px;
+  margin: 25px;
 }
 
 .html-block:before {
