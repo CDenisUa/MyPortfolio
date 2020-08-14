@@ -102,7 +102,6 @@ function showAndToUp() {
 //Плавные якоря
 $('a[href^="#"').click(function () {
     let target = $(this).attr('href');
-    console.log(target);
     $('html,body').animate({
         scrollTop: $(target).offset().top
     }, 800);
