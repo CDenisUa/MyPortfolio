@@ -21,6 +21,27 @@ $active: #b4b4b4;
 $brd: #303030;
 $wt: #ffffffdf;
 
+*{
+    &::-webkit-scrollbar-track
+            {
+                -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+                background-color: #ffffff2a;
+            }
+
+        &::-webkit-scrollbar
+            {
+                width: 10px;
+                background-color: #42414162;
+            }
+
+        &::-webkit-scrollbar-thumb
+            {
+                background-color: #d9a340;;
+                border-radius: 50px;
+                
+            }
+}
+
 .up{
     position: fixed;
     right: 50px;
@@ -39,7 +60,7 @@ body{
     background-color: $main_bg_color;
 }
 .container{
-    width: 1700px;
+    width: 100%;
     max-width: 1700px;
     margin: 0 auto;
 }
@@ -265,6 +286,7 @@ main{
         grid-area: title;
         align-self: start;
         justify-self: center;
+        
     }
     &__title{
         font-size: 60px;
@@ -281,9 +303,9 @@ main{
     }
     &__textBlock{
         width: 600px;
+        min-height: 100px;
         max-height: 200px;
         height: auto;
-        overflow: hidden;
         
         font-family: UnderText;
         font-size: 25px;
@@ -423,28 +445,50 @@ main{
 }
 .skill{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    background: $main_bg_color url('../img/skills/bg_skills.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-top: 2px solid $wt;
+    display: grid;
+    
 
-    &__boxes{
+    background: $main_bg_color url('../img/skills/des.jpg') repeat;
+    // background-size: cover;
+    // background-position: center;
+    border-top: 2px solid $wt;
+    &__container{
         display: flex;
-        flex-wrap: wrap;
-        // flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
+        flex-direction: column;
     }
+    &__title{
+        display: inline-block;
+        margin: 80px auto;
+    }
+    &__boxes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        margin: 30px;
+    }
+
     &__box{
-        width: 30%;
+        width: 100%;
         height: 500px;
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
         color: $wt;
         font-family: 'undertext';
         font-size: 25px;
-        margin-bottom: 30px;
-        display: inline-block;
         background-color: #000000aa;
+        text-align: center;
+        text-overflow: ellipsis;
+        overflow: auto;
+        // border-top: 1px solid $gold_light;
+        // border-bottom: 1px solid $gold_light;
+        box-shadow: 0px 0px 36px 0px rgba(0,0,0,0.75);
+        transition: .5s;
+        &:hover{
+            box-shadow: 0px 0px 36px 2px rgba(231,166,26,1);
+        }
+        
         span{
             font-weight: 600;
             font-size: 27px;
@@ -452,12 +496,26 @@ main{
             font-size: 40px;
         }
         article{
-            float: left;
+            width: 80%;
+            border-left: 1px solid $gold_light;
+            border-right: 1px solid $gold_light;
+            margin: 15px auto;
+            padding:0 20px;
+            
+            ul{
+                text-align: left;
+                list-style-type:square;
+                color: $gold_light;
+                font-weight: 700;
+                margin-top: 0;
+            }
         }
     }
 }
-.iconBlock{
-    
+.impot{ 
+    font-size: 25px !important; 
+    color: $gold_light !important;
+    font-weight: 700 !important;
 }
 .icon:before{
     font-size: 60px;

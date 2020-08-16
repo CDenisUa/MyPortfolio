@@ -7,6 +7,9 @@
             margin-left: 0;
         }
     }
+    .skill__boxes{
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media screen and (max-width: 1600px){
     .container{
@@ -139,6 +142,9 @@
             font-size: 35px;
         }
     }
+    .skill__boxes{
+        grid-template-columns: 1fr;
+    }
     .about{
         &__body{
             flex-direction:column;
@@ -208,6 +214,12 @@
             font-size: 10vw;
         }
     }
+    .main{
+        &__textBlock{
+            min-height: 150px;
+            overflow: auto;
+        }
+    }
     .about{
         margin-top: 50px;
         margin-bottom: 0;
@@ -223,6 +235,19 @@
         &__discription{
             width: 80%;
             padding-bottom: 0;
+        }
+    }
+    .skill{
+        &__title{
+            margin: 40px auto;
+        }
+        &__boxes{
+            margin: 10px 0px;
+        }
+        &__box{
+            &:hover{
+                box-shadow: none;
+            }
         }
     }
     .footer{
@@ -277,7 +302,7 @@
     .main{
         &__img{
             width: 80vw;
-            height: 40vh;
+            height: 15vh;
         }
     } 
     .footer{
