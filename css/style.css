@@ -7230,6 +7230,13 @@ footer {
   .header__lamp {
     margin-top: 30px;
   }
+  .about__discription {
+    word-wrap: break-word;
+  }
+  .main__title {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
   .main__img {
     width: 80vw;
     height: 15vh;
