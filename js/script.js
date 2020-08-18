@@ -20,6 +20,10 @@ let
 //загружаем страницу и запускаем скрипты
 
 $(function () {
+    //показываем кнопку show блоку article при разришении 768 ширины
+    if (currentWidth <= 768) {
+        $('.skill__btn').css('display', 'block')
+    }
     //скрываем меню
     $('.up, .burgerMenu').fadeOut(0);
 
@@ -36,6 +40,7 @@ $(function () {
     //выпадающее меню
     menu();
     showAndToUp();
+    showArticle();
 });
 
 //анимация лампочки
@@ -106,3 +111,15 @@ $('a[href^="#"').click(function () {
     }, 800);
     return false;
 })
+
+function showArticle() {
+    $('.skill__btn').click(function () {
+        if ($('article').hasClass('showArticle')) {
+            $('.skill__btn').html('Показать больше');
+            $('article').removeClass('showArticle');
+        } else {
+            $('article').addClass('showArticle');
+            $('.skill__btn').html('Скрыть')
+        }
+    })
+}

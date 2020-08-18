@@ -142,9 +142,19 @@
             font-size: 35px;
         }
     }
-    .skill__boxes{
+.skill{
+    &__title{
+        margin: 40px auto;
+    }
+    &__boxes{
         grid-template-columns: 1fr;
     }
+    &__box{
+        height: auto;
+        max-height: none;
+    }
+}
+    
     .about{
         &__body{
             flex-direction:column;

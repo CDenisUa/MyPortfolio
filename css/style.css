@@ -6655,6 +6655,19 @@ main {
           flex-direction: column;
 }
 
+.skill__btn {
+  display: none;
+  width: 30%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #ffffffa5;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
 .skill__title {
   display: inline-block;
   margin: 80px auto;
@@ -6686,7 +6699,7 @@ main {
   background-color: #000000aa;
   text-align: center;
   text-overflow: ellipsis;
-  overflow: auto;
+  overflow: hidden;
   -webkit-box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 36px 0px rgba(0, 0, 0, 0.75);
   -webkit-transition: .5s;
@@ -6711,6 +6724,7 @@ main {
   border-right: 1px solid #d9a440;
   margin: 15px auto;
   padding: 0 20px;
+  height: 298px;
 }
 
 .skill__box article ul {
@@ -6952,6 +6966,10 @@ footer {
   color: #8661d2;
 }
 
+.showArticle {
+  height: auto !important;
+}
+
 @media screen and (max-width: 1700px) {
   .container {
     max-width: 1700px;
@@ -7073,9 +7091,16 @@ footer {
   .main__title {
     font-size: 35px;
   }
+  .skill__title {
+    margin: 40px auto;
+  }
   .skill__boxes {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .skill__box {
+    height: auto;
+    max-height: none;
   }
   .about__body {
     -webkit-box-orient: vertical;
