@@ -506,7 +506,8 @@ main{
             border-right: 1px solid $gold_light;
             margin: 15px auto;
             padding:0 20px;
-            height: 298px;
+            height: inherit;
+            overflow: auto;
             ul{
                 text-align: left;
                 list-style-type:square;

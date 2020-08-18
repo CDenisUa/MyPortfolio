@@ -6724,7 +6724,8 @@ main {
   border-right: 1px solid #d9a440;
   margin: 15px auto;
   padding: 0 20px;
-  height: 298px;
+  height: inherit;
+  overflow: auto;
 }
 
 .skill__box article ul {
@@ -7094,6 +7095,9 @@ footer {
   .skill__title {
     margin: 40px auto;
   }
+  .skill__btn {
+    width: auto;
+  }
   .skill__boxes {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -7101,6 +7105,10 @@ footer {
   .skill__box {
     height: auto;
     max-height: none;
+  }
+  .skill__box article {
+    height: 400px;
+    overflow: visible;
   }
   .about__body {
     -webkit-box-orient: vertical;

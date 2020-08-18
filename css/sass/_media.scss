@@ -146,13 +146,22 @@
     &__title{
         margin: 40px auto;
     }
+    &__btn{
+        width: auto;
+    }
     &__boxes{
         grid-template-columns: 1fr;
     }
     &__box{
         height: auto;
         max-height: none;
+        article{
+            height: 400px;
+            overflow: visible;
+
+        }
     }
+    
 }
     
     .about{
