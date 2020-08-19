@@ -7,9 +7,6 @@
             margin-left: 0;
         }
     }
-    .skill__boxes{
-        grid-template-columns: 1fr 1fr;
-    }
 }
 @media screen and (max-width: 1600px){
     .container{
@@ -147,7 +144,7 @@
         margin: 40px auto;
     }
     &__btn{
-        width: auto;
+        width: 164px;
     }
     &__boxes{
         grid-template-columns: 1fr;
@@ -156,8 +153,8 @@
         height: auto;
         max-height: none;
         article{
-            height: 400px;
-            overflow: visible;
+            height: 395px;
+            overflow: hidden;
 
         }
     }
@@ -236,7 +233,7 @@
     .main{
         &__textBlock{
             min-height: 150px;
-            overflow: auto;
+            overflow: visible;
         }
     }
     .about{

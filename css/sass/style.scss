@@ -304,7 +304,6 @@ main{
     &__textBlock{
         width: 600px;
         min-height: 100px;
-        max-height: 200px;
         height: auto;
         
         font-family: UnderText;
@@ -470,14 +469,13 @@ main{
     }
     &__boxes{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
         margin: 30px;
     }
 
     &__box{
         width: 100%;
-        height: 500px;
         max-height: 500px;
         display: flex;
         flex-direction: column;
@@ -506,6 +504,7 @@ main{
             border-right: 1px solid $gold_light;
             margin: 15px auto;
             padding:0 20px;
+            text-align: left;
             height: inherit;
             overflow: auto;
             ul{
